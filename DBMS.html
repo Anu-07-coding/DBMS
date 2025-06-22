@@ -1,0 +1,324 @@
+<html>
+<head><title>DBMS</title></head>
+<body>
+<h1><center>Database Management System</center></h1>
+<br><hr><br>
+
+<h2>Data</h2>
+<p>Data are the collection of raw facts and figure which are unorganized, uninterpreted, and isolated, which doesn’t give any particular sense. They are randomly gathered. So that they can be processed to obtain the desired result.</p>
+
+<h3>Data types</h3>
+Data types are the kind of data that can be stored in a database column, dictating how the data is stored and the operations that can be performed on it. Common categories include numeric, character/string, date and time, binary, and boolean data types. Specialized types like XML, JSON, and spatial data types are also used. 
+<br>
+
+<ol>
+<li>Numeric Data Types</li>
+<ul><li>Integer: Used for whole numbers (e.g., INT, TINYINT, BIGINT)</li>
+<li>Floating-point: Used for numbers with decimal points (e.g., FLOAT, REAL)</li>
+</ul>
+
+<li>Character and String Data Types</li>
+<ul><li>CHAR: Fixed-length character strings (e.g., CHAR(10) for a string of exactly 10 characters)</li>
+<li>VARCHAR: Variable-length character strings (e.g., VARCHAR(255) for a string up to 255 characters)</li>
+<li>TEXT: Used for storing large text values</li>
+<li>NCHAR/NVARCHAR/NTEXT: Unicode character string datatypes for storing characters from different languages</li> 
+</ul>
+
+<li>Date and Time Data Types</li>
+<ul><li>DATE: Stores dates (e.g., 2025-06-22)</li>
+<li>TIME: Stores time (e.g., 14:30:00)</li>
+<li>DATETIME: Stores both date and time</li>
+</ul>
+
+<li>Binary Data Types</li>
+<ul><li>BINARY: Fixed-length binary data</li>
+<li>VARBINARY: Variable-length binary data</li>
+</ul>
+
+<li>Boolean Data Type</li>
+<ul><li>BOOLEAN: Stores true or false values</li></ul>
+
+<li>Special Data Types</li>
+<ul><li>JSON: Stores data in JSON (JavaScript Object Notation) format</li>
+<li>XML: Stores data in XML (Extensible Markup Language) format</li>
+<li>Spatial data types: Used for storing geographic data</li>
+<li>BLOB/CLOB: Used for storing large binary objects (BLOB) and character large objects (CLOB)</li>
+<li>CURSOR: Used to store a reference to a result set</li>
+<li>TABLE: Used to store a table structure</li>
+</ul>
+
+<li>User-Defined Data Types</li>
+<ul><li>Users can create their own data types based on existing ones</li></ul>
+<hr>
+
+<h2><b>Database Management System (DBMS)</b></h2>
+<p>A Database Management System (DBMS) is a software solution designed to efficiently manage, organize, and retrieve data in a structured manner.DBMS is a computerized record keeping system. It is a software that defines, manipulates and  manage the database. It allows to access the file, update the record and retrieve data as requested. In other word, DBMS is defined as the collection of interrelated  data and set of programs to access there data. The collection of data is usually a database which contains the information about any particular organization. The primary goal of DBMS is to provide an effective and efficient environment for both data retrieval and  storing data in database</p>
+
+<hr>
+<ul><li>Advantages of DBMS</li>
+<ol>
+<li>Sharing data</li>
+<li>Reduce data redundancy</li>
+<li>Data backup and recovery</li>
+<li>Data security</li>
+<li>Multiple user interface</li>
+<li>Data integrity</li>
+</ol>
+<br>
+
+<li>Disadvantages of DBMS</li>
+<ol>
+<li>Expensive</li>
+<li>Changing technology</li>
+<li>Backup data needed</li>
+</ol>
+<hr>
+
+<h2>Types of Database</h2>
+<ol><b><li>Hierarchical database model</li></b>
+
+It is one of the oldest type of database model. In this model data are represented in the forms of record, each record has multiple field or attributes. All records are arranged in database as tree like structure. The relationship between the records is called parent child relationship in which one child record relates to only a single parent i.e child posses property only property of a single parent. Here child are restricted to use the property of a parent to whom it doesn't belong.
+
+<b><li>Network database model</li></b>
+
+This network model replace hierarchical model due to some limitation on the model. Suppose an employee relates to two different department then hierarchical model cannot be able to arrange record in proper place. So, network database model was emerged to arrange non-hierarchical database. The structure of database is more like graph rather than tree structure. A network model consists of collection of record which are interrelated to each other with the help of relationship. Each records have multiple fields and each field has only one data value. In this type of model a parent may have multiple child, as well as child can have multiple parent.
+
+<b><li>Relational database model</li></b>
+
+In relational database model, the data are organized into tables which contains multiple row and columns. These tables are called relations. A row in a table represents a relationship among a set of values. Since, a table is collection of such relationship. It is generally referred to the mathematical term relations from which the relational database model derives its name. It is also known as RDBMS.
+
+<b><li>Centralized database</li></b>
+
+It is a simple type which works on client server basis. In this type clients or user are directly connected to the centrally totally located server. This server hosts the data of its client or user and helps them to store and retrieve data as requirement. This type of system are used in small scale industries which doesn't have to deal with large volume of data and user. Centralized database runs on single computer which may have single or multiple user. Since database is centralized, security is not a crucial part here. The maintenance of database is easier because of data are centrally stored. This type of system denote allow unauthorized person to access data.
+
+<b><li>Distributed database</li></b>
+
+This type of database system are complex in structure, instead of storing and retrieving data from centrally located server, it uses several numbers of database and server randomly located at different place. It is the collection of multiple logically interrelated database which are distributed in many geographical location. Since server are located at different locations user can experience a good speed of bandwidth. Similarly, back up and recovery process is lot more easier there, which makes data more secured. This type of system is used by large organization who has to deal with large volume of data and user all around the world. Since it is distributed in nature there may arises security issue and are costly to maintain and operate. Simply, distributed database system are the collection of several number of centralized database system in different locations.
+
+<br><br>
+<ul><li><b>Common Functions that a DBMS performs:</li></b></ul><br>
+
+<ol>
+<li>Administration tasks</li>
+A DBMS supports many typical database administration tasks, including change management, performance monitoring and tuning, security, and backup and recovery. Most database management systems are also responsible for automated rollbacks and restarts as well as logging and auditing of activity in databases and the applications that access them.
+
+<li>Storage</li>
+A DBMS provides efficient data storage and retrieval by ensuring that data is stored in tables, rows and columns.
+
+<li>Concurrency control</li>
+In environments where multiple users access and modify the database simultaneously, a DBMS guarantees controlled transaction execution to prevent data corruption or inconsistency.
+
+<li>Centralized view</li>
+A DBMS provides a centralized view of data that multiple users can access from multiple locations in a controlled manner. A DBMS can limit what data end users see and how they view the data, providing many views of a single database schema. End users and software programs are free from having to understand where the data is physically located or on what type of storage medium it resides because the DBMS handles all requests.
+
+<li>Data manipulation</li>
+A DBMS ensures data integrity and consistency by letting users insert, update, delete and modify data inside a database.
+
+<li>Data independence</li>
+A DBMS offers both logical and physical data independence to protect users and applications from having to know where data is stored or from being concerned about changes to the physical structure of data. As long as programs use the application programming interface (API) for the database that the DBMS provides, developers won't have to modify programs just because changes have been made to the database.
+
+<li>Backup and recovery</li>
+A DBMS facilitates backup and recovery options by creating backup copies so that data can be restored to a consistent state. This protects against data loss due to hardware failures, software errors or other unforeseen events. In a relational database management system (RDBMS) -- the most widely used type of DBMS -- the API is structured query language (SQL), a standard programming language for defining, protecting and accessing data.
+</ol>
+
+<br>
+<ul><li><b>Components of DBMS</li></b></ul>
+<br> 
+
+<ol>
+<li>Storage engine</li>
+This basic element of a DBMS is used to store data. The DBMS must interface with a file system at the operating system (OS) level to store data. It can use additional components to store data or interface with the actual data at the file system level.
+
+
+<li>Database access language</li>
+The DBMS must also provide an API to access the data, typically in the form of a database access language that can be used to modify data but also create database objects and secure and authorize access to the data. SQL is an example of a database access language and encompasses several sets of commands, including data control language for authorizing data access, data definition language for defining database structures and data manipulation language for reading and modifying data.
+
+<li>Optimization engine</li>
+A DBMS can also provide an optimization engine that's used to parse database access language requests and turn them into actionable commands for accessing and modifying data.
+
+<li>Query processor</li>
+After a query is optimized, the DBMS must provide a way to run the query and return results.
+
+<li>Lock manager</li>
+This crucial component of the DBMS manages concurrent access to the same data. Locks are required to ensure multiple users aren't trying to modify the same data simultaneously.
+
+<li>Data utilities</li>
+A DBMS also provides a set of utilities for managing and controlling database activities. Examples of database utilities include reorganization, RUNSTATS, backup and copy, recover, integrity check, load data, unload data and repair database.
+
+<li>Reporting and monitoring tools</li>
+Most DBMSes are integrated with reporting and monitoring tools to offer enhanced functionality for managing and analyzing data. Reporting tools generate reports, whereas monitoring tools track various database metrics, such as resource consumption and user activity.
+</ol>
+<br>
+<hr>
+<br>
+
+<ul><li><b>Structure Query Language (SQL)</li></b></ul>
+<br>
+
+SQL stands for Structured Query Language. It is an international standard data base query language for accessing and managing data in the database. SQL was introduced and developed by IBM in early 1970’s. It was able to control relational database. SQL is not a complete programming language. It is only used for communicating with database. SQL has statement for data definition (DDL), data manipulation (DML) and data control (DCL). A query is a request to a DBMS for the retrieval, modification, insertion and deletion of the data from database.
+SQL is made of three sub languages: DDL, DML and DCL
+<br>
+
+
+<ol><li>DDL (Data Definition Language)</li>
+DDL is used by the database designer and programmers to specify the content and the structure of table. It is used to define the physical characteristics of record. It includes commands that manipulate the structure of object such as tables: For eg, to create table
+<br>
+Syntax:
+<br>
+CREATE TABLE table_name (field_name1 data_type1  field_name2 data_type2 ………);
+<br>
+CREATE TABLE Student (SN Number Fname text);
+
+<li>DML (Data Manipulation Language)</li>
+DML is related with manipulation of records such as retrieval, sorting, display and deletion of records or data. It helps user to use query and display report of the table. It provide technique for processing the database. It includes commands like insert, delete, select, and update to manipulate the information stored in the database.
+<br>
+Syntax:
+<br>
+INSERT INTO table_name VALUES (list of values);
+<br>
+INSERT INTO student VALUES (1 RAM);
+
+<li>DCL (Data Control Language)</li>
+All provides additional feature for security of table and database. It includes commands for controlling data and access to the database. Some of the example of this command are grant, commit, etc
+
+<br><br>
+<ul><li><b>CRUD Operations</li></b></ul>
+<br>
+CRUD is an acronym for CREATE, READ(SELECT), UPDATE, and DELETE statements in SQL Server. CRUD in database terms can be mentioned as Data Manipulation Language (DML) Statements as well. Data Manipulation Language is used to manage or manipulate the data present inside database Tables. Even though CRUD operations are supported on Database object View, Views have several restrictions and hence in this article, we can test the CRUD operations on Tables.
+
+<ol>
+<li>Create (INSERT)</li>
+The Create operation is used to insert new records into a database table. It uses the SQL INSERT INTO statement to add a new row of data.
+
+<li>Read (SELECT)</li>
+The Read operation is used to retrieve or view existing data from the database. It uses the SELECT statement, which can display specific columns or all data.
+
+<li>Update (UPDATE)</li>
+The Update operation is used to modify or change existing records in a table. The UPDATE statement is used along with the SET and WHERE clauses to target specific records.
+
+<li>Delete (DELETE)</li>
+The Delete operation is used to remove existing records from a table. It uses the DELETE FROM statement along with a condition to specify which record(s) to delete.
+
+</ol><br>
+
+<b>Keys in DBMS</b><br> 
+Keys are essential concepts in relational databases. They help uniquely identify rows (records) in a table and establish relationships between tables. Keys also help maintain data integrity and eliminate redundancy.
+<br><br>
+
+<ul><li><b>Types of Keys in DBMS</li></b></ul>
+
+<br>
+Primary Key: A primary key is a column or a set of columns that uniquely identifies each row in a table.It cannot contain NULL values.A table can have only one primary key.
+
+<br><br>
+Candidate Key: A candidate key is any column (or combination) that can qualify as a primary key.There can be multiple candidate keys in a table.One of them is chosen as the primary key.
+
+<br><br>
+Alternate Key: When a candidate key is not chosen as the primary key, it is called an alternate key.It is still capable of uniquely identifying records.
+
+<br><br>
+Composite Key: A composite key is made up of two or more columns that together uniquely identify a row.It is used when a single column is not sufficient to uniquely identify records.
+
+<br><br>
+Foreign Key: A foreign key is a column in one table that refers to the primary key of another table.It is used to link two tables and enforce referential integrity.
+
+<br><br><hr>
+<b>Constraints in Database</b><br> 
+Constraints in a database are rules applied to table columns to ensure the accuracy, consistency, and integrity of data. The NOT NULL constraint ensures that a column cannot have empty or null values, enforcing that data must be provided. The UNIQUE constraint guarantees that all values in a column are different, allowing only one occurrence of each value. A PRIMARY KEY uniquely identifies each record in a table by combining the features of NOT NULL and UNIQUE, and there can only be one primary key per table. The FOREIGN KEY constraint is used to maintain referential integrity between two tables by linking a column in one table to the primary key of another. The CHECK constraint restricts the values that can be entered into a column by specifying a condition that must be met, such as limiting marks to a range between 0 and 100. Finally, the DEFAULT constraint assigns a default value to a column when no value is provided during data entry. Together, these constraints help maintain reliable and valid data within relational databases.
+<br>
+
+
+<ul><li><b>Anomalies in Database</li></b></ul>
+Anomalies are problems or inconsistencies that occur in a database table when data is poorly organized, especially in un-normalized or redundant tables. These issues can lead to data duplication, loss, or inconsistency, and they are typically addressed by applying normalization techniques.
+
+<ul><li>Types of Anomalies</li></ul>
+
+<ol>
+<li>Insertion Anomaly</li>
+It occurs when we cannot insert data into a table without the presence of other data.This usually happens in a table where multiple entities are stored together.
+
+<li>Update Anomaly</li>
+It happens when data is duplicated in multiple rows, and updating it in one place requires updating it in all other places.If you forget to update one instance, it leads to inconsistency.
+
+<li>Deletion Anomaly</li>
+It occurs when deleting one piece of data unintentionally removes other useful data.This usually happens when unrelated data is stored together.
+
+<br><br>
+<ul><li><b>Normalization in Database</li></b></ul>
+Normalization is the process of organizing data in a database to reduce redundancy (repeated data) and improve data integrity. It involves dividing a large table into smaller, related tables and linking them using keys. The goal is to make the database efficient, consistent, and easy to maintain.
+
+<br><br>
+<ul><li><b>Why is Normalization Important?</b></li></ul><br>
+Eliminates data redundancy (duplicate data)<br>
+Prevents anomalies (insertion, update, and deletion issues)<br>
+Ensures data consistency and accuracy<br>
+Improves data organization and scalability<br>
+
+<br>
+<ul><li><b>Types of Normalization</b></li></ul>
+<br>
+<ol>
+<li>First Normal Form (1NF)</li>
+A table is in 1NF if:
+<br>
+All columns contain atomic (indivisible) values
+<br>
+There are no repeating groups or arrays
+<br>
+It ensures that each field contains only one value
+
+<li>Second Normal Form (2NF)</li>
+A table is in 2NF if:
+<br>
+It is already in 1NF
+<br>
+Every non-key column is fully dependent on the entire primary key
+<br>
+Mainly applies to tables with composite keys
+
+
+<li>Third Normal Form (3NF)</li>
+A table is in 3NF if:
+<br>
+It is already in 2NF
+<br>
+There is no transitive dependency (non-key column depends on another non-key column)
+<br>
+It ensures that every column is only dependent on the primary key
+
+
+<br><br>
+<ul><li><b>Database security</li></b></ul>
+<br>
+Database security refers to the protection of the database against unauthorized access, misuse, or corruption. It ensures that only authorized users can access or modify the data, while confidentiality, integrity, and availability of the data are maintained.
+
+<br><br>
+Objectives of Database Security:
+<ol><li>Prevent unauthorized access</li>
+<li>Protect sensitive data from theft or leaks</li>
+<li>Ensure data integrity (no unauthorized changes)</li>
+<li>Ensure data availability (data is accessible to valid users)</li>
+<li>Prevent data loss or corruption</li>
+
+<br>
+Common Security Threats:
+<ol><li>Unauthorized access (hacking or misuse of credentials)</li>
+<li>SQL injection attacks</li>
+<li>Data breaches or leaks</li>
+<li>Physical theft or damage</li>
+<li>Malware or viruses</li>
+<li>Human errors (accidental deletion or updates)</li>
+
+<br>
+Techniques to Secure a Database:
+<ol><li>User Authentication</li>
+<li>Authorization and Access Control</li>
+<li>Data Encryption</li>
+<li>Backups and Recovery</li>
+<li>Database Auditing</li>
+<li>Firewall and Network Security</li>
+
+
+</body>
+</html>
+
